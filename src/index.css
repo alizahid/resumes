@@ -1,0 +1,27 @@
+/* fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: "Matter";
+  font-style: normal;
+  font-weight: 300 900;
+  src: url("/fonts/matter.woff2") format("woff2");
+}
+
+/* tailwind */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global */
+
+body {
+  @apply text-gray12 cursor-default bg-gray3 print:bg-transparent selection:bg-cyanA3;
+}
+
+/* page */
+
+.page {
+  @apply h-a4 w-a4 bg-white print:bg-transparent p-8 flex flex-col;
+}
